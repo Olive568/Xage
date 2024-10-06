@@ -1,0 +1,198 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #CD62B4;
+    z-index: 9;
+}
+
+.nav {
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand-logo {
+    height: 60px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn {
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    background: #383838;
+    color: #fff;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.search-box::placeholder {
+    color: #a9a9a9;
+}
+
+.nav-items a {
+    margin-left: 20px;
+}
+
+.nav-items a img {
+    width: 30px;
+}
+
+/* Links Container Styles */
+.links-container {
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    background: #CD62B4;
+}
+
+.link {
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+/* Centering the LoginSquare */
+.wrapper {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Subtract height of navbar */
+}
+
+/* Login Form Styles */
+.LoginSquare {
+    background-color: #CD62B4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.LoginSquare h1{
+    text-align: center;
+}
+.input-box {
+    margin: 10px 0;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    outline: none;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    background: #afa408;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button.btn:hover {
+    background-color: #850d7b;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between; /* Pushes checkbox to the left, link to the right */
+    align-items: center;
+    width: 100%; /* Makes sure the container spans full width */
+    margin: 10px 30px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 5px; /* Adds space between the checkbox and label */
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: #850d7b;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+
+
+.register-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #850d7b;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
