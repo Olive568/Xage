@@ -1,9 +1,9 @@
 
 :root {
-    --primary-color: #CD62B4;
+    --primary-color: #6A7310;
 }
 body {
-    --primary-color: #CD62B4;
+    --primary-color: #6A7310;
 }
 body.admin2 {
     --primary-color: #6A7310;

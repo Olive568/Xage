@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.LoginSquare form'); // Changed to target the form inside .wrapper
+    const form = document.querySelector('.LoginSquare form');
     
     if (form) {
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevents the default form submission behavior
+            event.preventDefault(); 
 
             const username = document.getElementById('userbox').value;
             const password = document.getElementById('userpass').value;
 
             const validCredentials = {
-                admin: 'password123',
-                admin2: 'password456'
+                RegularUser: 'RegularUser123',
+                ShinyUser: 'ShinyUser123'
             };
 
             if (validCredentials[username] === password) {
                 if (username === 'admin2') {
-                    document.body.classList.add('admin2'); // Apply the color change for admin2
+                    document.body.classList.add('admin2'); 
                 }
-                window.location.href = 'store.html'; // Redirect to store
+                window.location.href = 'homeshiny.html'; 
             } else {
                 alert('Invalid username or password. Please try again.');
             }
