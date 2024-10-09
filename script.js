@@ -14,10 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
             };
 
             if (validCredentials[username] === password) {
-                if (username === 'admin2') {
-                    document.body.classList.add('admin2'); 
+                if (username === 'RegularUser') {
+                    window.location.href = 'store.html'; 
                 }
-                window.location.href = 'homeshiny.html'; 
+                else if (username === 'ShinyUser') {
+                    window.location.href = 'homeshiny.html'; 
+                }
+                
             } else {
                 alert('Invalid username or password. Please try again.');
             }
